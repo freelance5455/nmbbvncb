@@ -61,6 +61,13 @@
             android:label="${appLabel}" />
 
         <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Web2App"
+            android:label="${appLabel}" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"

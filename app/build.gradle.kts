@@ -23,7 +23,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = cfgPackage
+        applicationId = "com.example.demo"
         minSdk = 21
         targetSdk = 36
         versionCode = cfgVersionCode

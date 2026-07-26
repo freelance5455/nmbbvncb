@@ -35,6 +35,13 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        if (qq()) {
+            startActivity(Intent(this, InfoActivity::class.java))
+            finish()
+            return
+        }
+
         // Draw edge-to-edge so the splash background fills behind the system bars.
         androidx.core.view.WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_splash)
